@@ -9,6 +9,10 @@ Assassin is a web-based ping,dig,traceroute service.
 * [jQuery](https://jquery.com/)
 * see [requirements.txt](./requirements.txt) [bower.json](./bower.json) for full list  
 
+## Prerequisites  
+This product includes GeoLite2 data created by MaxMind, available from [http://www.maxmind.com](http://www.maxmind.com)  
+`wget http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz`  
+`gzip -d GeoLite2-City.mmdb.gz`  
 ## Installation  
 `pip install -r requirements.txt`  
 `npm install && bower install && tsd install`  
