@@ -16,3 +16,6 @@ Assassin is a web-based ping,dig,traceroute service.
 ## Development  
 `python server.py --debug=true`
 Just take a look at `localhost:8080/client`
+
+## LICENSE
+GNU GENERAL PUBLIC LICENSE Version 2
