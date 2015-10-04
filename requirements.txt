@@ -1,0 +1,10 @@
+tornado
+salt
+#required by salt
+zmq
+#tornado-redis
+#redis
+geoip2
+git+https://github.com/gg/pingparser
+git+https://github.com/paulchakravarti/dnslib
+six

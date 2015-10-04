@@ -1,0 +1,25 @@
+{
+  "name": "assassin",
+  "version": "0.0.0",
+  "authors": [
+    "bung87 <zh.bung@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "datatables": "~1.10.9",
+    "fullpage.js": "~2.7.2",
+    "jquery": "~2.1.4",
+    "normalize.css": "~3.0.3",
+    "raphael.js": "~2.1.4"
+  },
+  "devDependencies": {
+    "normalize.css.less": "~3.0.3"
+  }
+}

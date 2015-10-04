@@ -1,0 +1,90 @@
+<html>
+<head>
+    <link rel="stylesheet" href="{{ static_url("css/normalize.min.css") }}" />
+    <link rel="stylesheet" href="{{ static_url("css/style.css") }}" />
+    <link rel="stylesheet" href="{{ static_url("datatables/css/jquery.dataTables.min.css") }}" />
+    <!-- <link rel="stylesheet" href="{{ static_url("datatables/css/dataTables.jqueryui.min.css") }}" /> -->
+    <script type="text/javascript">window.ws_url ="ws://{{host_port}}/assassin";</script>
+</head>
+
+<body>
+<div id="fullpage">
+<div class="section" id="main-page">
+    <div class="slide" style="position:relative" data-anchor="start">
+        <div id="central_back">
+            <div id="central" class="absct">
+                <div id="central_front" class="absct">
+                </div>
+            </div>
+        </div>
+        <div id="content" class="absct">
+            <div class="clearfix">
+                <ul id="task_types" class="absct">
+                    <li><a href="#" data-task="ping">Ping</a></li>
+                    <li><a href="#" data-task="dns">Dns</a></li>
+                    <li><a href="#" data-task="traceroute">TraceRoute</a></li>
+                </ul>
+            </div>
+            <input id="request_ipt"/>
+            <button id="request_send_btn">Send</button>
+        </div>
+        <div id="task_result">
+        <div id="task_result_inner"></div>
+        <div id="task_result_overlay"></div>
+        </div>
+    </div>
+    <div id="ping-page" class="slide" data-anchor="ping">
+        <table id="ping-table" class="display" cellspacing="0" width="100%">
+             <caption>Ping</caption>
+            <thead>
+                <tr>
+                    <th>Executor</th>
+                    <th>minping <span>(ms)</span></th>
+                    <th>maxping <span>(ms)</span></th>
+                    <th>avgping <span>(ms)</span></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div id="dns-page" class="slide" data-anchor="dns">
+        <table id="dns-table" class="display" cellspacing="0" width="100%">
+             <caption>Dns</caption>
+            <thead>
+                <tr>
+                    <th>Executor</th>
+                    <th>time <span>(ms)</span></th>
+                   
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div id="traceroute-page" class="slide" data-anchor="traceroute">
+        <table id="traceroute-table" class="display" cellspacing="0" width="100%">
+             <caption>Traceroute</caption>
+            <thead>
+                <tr>
+                    <th>Hostname</th>
+                    <th>ms1 <span>(ms)</span></th>
+                    <th>ms2 <span>(ms)</span></th>
+                    <th>ms3 <span>(ms)</span></th>
+                   
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+</div>
+
+</div>
+<!-- <script src="{{ static_url("js/zepto.min.js") }}"></script> -->
+
+<script src="{{ static_url("js/jquery.min.js") }}"></script>
+<script src="{{ static_url("js/jquery.fullPage.min.js") }}"></script>
+<script src="{{ static_url("datatables/js/jquery.dataTables.min.js") }}"></script>
+<!-- <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.9/js/jquery.dataTables.js"></script> -->
+
+<script src="{{ static_url("js/raphael-min.js") }}"></script>
+<script src="{{ static_url("js/app.pkgd.js") }}"></script>
+
+</body>
+</html>
